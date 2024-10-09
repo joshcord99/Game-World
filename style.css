@@ -1,0 +1,161 @@
+.jersey-10-regular {
+    display: flex;
+    justify-content: center;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 200;
+    font-size: 150px;
+    font-style: normal;
+}
+
+
+
+.gameDisplay {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.searchElem{
+    display: flex;
+    justify-content: flex-start;
+}
+.navList{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 200px;
+}
+.top {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: flex-start;
+    justify-content: space-around; */
+
+}
+
+
+
+.card {
+    flex: 1 0 23%;
+    /* Flex item takes 25% of the container’s width */
+    max-width: 23%;
+    /* Ensure the card doesn't grow beyond 25% */
+    margin: 0 auto;
+    /* Adds 15px margin around the card */
+    box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width/height */
+    border-radius: 60px;
+    border: solid black;
+    margin-top: 10px;
+
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.foot {
+    position: absolute
+     margin-bottom:0;
+}
+
+/* translate(): Moves the element horizontally by the given value (positive values move it right, negative values move it left).
+
+translateY(): Moves the element vertically by the given value (positive values move it down, negative values move it up).
+
+translate(valueX, valueY): Moves the element by the specified amounts horizontally (valueX) and vertically (valueY) */
+
+.cardInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Add spacing between cards */
+    max-width: 1200px;
+    /* Set a maximum width for the card container */
+    margin: 0 auto;
+    /* Center the container on the page */
+    padding: 20px;
+    /* Optional: Add padding */
+}
+
+
+
+
+.imageCard {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the container on the page */
+    padding: 20px;
+    /* Optional: Add padding */
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+    .card {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-top: -75px;
+}
+
+.userloginbtn {
+    background-color: red;
+    color: white;
+}
+
+.userloginbtn:hover {
+    background-color: blue;
+    transition-duration: 0.5ms;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
